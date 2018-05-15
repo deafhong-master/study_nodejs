@@ -1,0 +1,14 @@
+{
+  "name": "step07_mongodb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prestart": "mongod --dbpath data --fork --logpath /dev/null",
+    "start": "node app.js",
+    "poststop": "mongo admin --eval 'db.shutdownServer()' > /dev/null"
+  },
+  "author": "",
+  "license": "ISC"
+}
