@@ -1,4 +1,5 @@
 var express = require('express');
+var path = require('path')      //for window
 var app = express();
 var router = require('./router/main')(app);
 
@@ -10,4 +11,5 @@ var server = app.listen(3000, () => {
     console.log("Express server has started on port 3000")
 });
 // style.css 파일 추가 후 작성.
-app.use(express.static('public'));
+// app.use(express.static('public')); // for mac
+app.use(express.static(path.join(__dirname, 'public')));    // for window

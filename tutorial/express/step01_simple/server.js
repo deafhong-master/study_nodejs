@@ -6,6 +6,6 @@ var server = app.listen(3000, () => {
 });
 
 // simple router example
-// app.get('/', (req, res) => {
-//     res.send('Hello World');
-// });
+app.get('/', (req, res) => {
+    res.send('Hello World');
+});
