@@ -5,3 +5,5 @@ ROUTE	METHOD	DESCRIPTION
 /api/books	POST	book 데이터 생성
 /api/books/:book_id	PUT	book 데이터 수정
 /api/books/:book_id	DELETE	book 데이터 제거
+
+mongoDB 테스트 하기 전에 /data 폴더를 생성시킬 것.
